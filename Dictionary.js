@@ -1,8 +1,7 @@
 function once(){
 document.getElementById("search").addEventListener("keypress", function(event){
  if(event.key ="enter"){Api();}   
-});
-}
+});}
 function audio2(){
 var aud = document.getElementById("audio");
 var audio = new Audio(aud.value);
