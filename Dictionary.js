@@ -15,7 +15,6 @@ var response = await fetch(url);
 
 var data = await response.json();
 var data1 = JSON.stringify(data);
-//alert(data1);
 var data2 = data1.split('"')[1];
 if(data2=="title"){alert("word not found")}
 var word = data[0].word;
