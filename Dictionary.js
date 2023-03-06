@@ -8,7 +8,6 @@ var aud = document.getElementById("audio");
 var audio = new Audio(aud.value);
 document.getElementById("play").addEventListener("click",audio.play());
 }
-
 async function Api(){
 var url1 = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 var search =document.getElementById("search").value;
@@ -17,7 +16,7 @@ var response = await fetch(url);
 
 var data = await response.json();
 var data1 = JSON.stringify(data);
-//  alert(data1);
+alert(data1);
 var data2 = data1.split('"')[1];
 if(data2=="title"){alert("word not found")}
 var word = data[0].word;
